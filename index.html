@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="naqshad.css">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+             <span class="icon"><i class="fa fa-graduation-cap"></i></span>
+             <span class="title"> Dashboard</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-users"></i></span>
+             <span class="title"> Students</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-money"></i></span>
+             <span class="title">Finance</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-cog"></i></span>
+             <span class="title"> settings</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-graduation-cap"></i></span>
+             <span class="title"> Parents</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-question"></i></span>
+             <span class="title"> Exams</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-file"></i></span>
+             <span class="title"> Results</span>
+            </li>
+            <li>
+             <span class="icon"><i class="fa fa-book"></i></span>
+             <span class="title"> Courses</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div class="toggler"></div>
+            <div class="search">
+                <label >
+                    <input type="search" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </label>
+            </div>
+            <div class="user">
+                <img src="images/user.png" alt="user photo">
+            </div>
+        </div>
+        <div class="cardbox">
+            <div class="card">
+                <div>
+                    <div class="number">1500</div>
+                    <div class="desc">No. of Students </div>
+                </div>
+                <div class="icon"><i class="fa fa-users"></i></div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">960</div>
+                    <div class="desc">No. of Female</div>
+                </div>
+                <div class="icon"><i class="fa fa-female"></i></div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">400</div>
+                    <div class="desc">No. of male </div>
+                </div>
+                <div class="icon"><i class="fa fa-male"></i></div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">$ 1000000</div>
+                    <div class="desc">Monthly income </div>
+                </div>
+                <div class="icon"><i class="fa fa-money"></i></div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="number">1500</div>
+                    <div class="desc">Int. Relations </div>
+                </div>
+                <div class="icon"><i class="fa fa-awards"></i></div>
+                </div>
+            <div class="card">
+                <div>
+                    <div class="number">500</div>
+                    <div class="desc">No. of Faculties </div>
+                </div>
+                <div class="icon"><i class="fa fa-users"></i></div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+       let toggle = document.querySelector('.toggler');
+       let nav = document.querySelector('.sidebar');
+       let main = document.querySelector('.main');
+       toggle.onclick=function(){
+           toggle.classList.toggle('active');
+           nav.classList.toggle('active');
+           main.classList.toggle('active');
+       }
+    </script>
+</body>
+</html>
